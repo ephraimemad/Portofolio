@@ -3,27 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ephraim's Coding Reels</title>
+  <title>Ephraim's Coding Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Ephraim's Coding Reels</h1>
-    <p>Watch bite-sized coding tutorials & tips 🚀</p>
+    <h1>Ephraim's Coding Portfolio</h1>
+    <p>AI, Mobile Apps, and Bite-Sized Dev Reels 🚀</p>
   </header>
 
-  <main class="reels-grid">
-    <!-- Example Reels: Replace with your own -->
-    <div class="reel">
-      <iframe src="https://www.youtube.com/embed/SHORT_ID" allowfullscreen></iframe>
+  <!-- 👨‍💻 Projects Section -->
+  <section id="projects" class="section">
+    <h2>🚀 Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>VoltIDE</h3>
+        <p>AI-powered cross-platform coding IDE with GPT support.</p>
+        <a href="https://github.com/yourusername/voltide" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>AutoFix Chatbot</h3>
+        <p>AI chatbot for diagnosing motorcycle/bicycle problems with GPS technician map.</p>
+        <a href="https://github.com/yourusername/autofix-bot" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Add more project cards as needed -->
     </div>
-    <div class="reel">
-      <iframe src="https://www.youtube.com/embed/SHORT_ID" allowfullscreen></iframe>
+  </section>
+
+  <!-- 🎞️ Coding Reels Section -->
+  <section id="reels" class="section">
+    <h2>🎞️ My Coding Reels</h2>
+    <div class="reels-grid">
+      <div class="reel">
+        <iframe src="https://www.youtube.com/embed/SHORT_ID" allowfullscreen></iframe>
+      </div>
+      <div class="reel">
+        <iframe src="https://www.youtube.com/embed/SHORT_ID" allowfullscreen></iframe>
+      </div>
+      <!-- Add more reels -->
     </div>
-  </main>
+  </section>
+
+  <!-- 📧 Email Signup Section -->
+  <section id="newsletter" class="section">
+    <h2>📧 Join My Mailing List</h2>
+    <p>Get updates on new Reels, projects, and tutorials.</p>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="email-form">
+      <input type="email" name="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
   <footer>
-    <p>Made with 💻 by Ephraim</p>
+    <p>Made with 💻 by Ephraim • <a href="https://github.com/ephraimemad" target="_blank">GitHub</a></p>
   </footer>
 </body>
 </html>
