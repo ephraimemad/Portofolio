@@ -9,31 +9,32 @@
     body {
       margin: 0;
       font-family: 'Space Grotesk', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
+      background-color: #f4f6f8;
+      color: #1e1e1e;
     }
     header {
-      padding: 2rem;
+      padding: 3rem 2rem 2rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     .hero-text {
       max-width: 600px;
     }
     .hero-text h1 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       color: #007f5f;
       margin-bottom: 0.5rem;
     }
     .hero-text p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
     }
     .tags {
-      margin-top: 1rem;
+      margin: 1rem 0;
     }
     .tag {
       background-color: #f4d35e;
@@ -47,21 +48,47 @@
       letter-spacing: 0.05em;
     }
     .hero-img img {
-      width: 200px;
+      width: 240px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 10px 10px 0px #00000022;
+    }
+    .email-form {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .email-form input {
+      flex: 1;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
       border-radius: 8px;
-      box-shadow: 8px 8px 0px #00000022;
+    }
+    .email-form button {
+      background: #007f5f;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
     }
     .section {
-      padding: 2rem;
+      padding: 3rem 2rem;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
     .projects-grid, .reels-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
+      gap: 1.5rem;
     }
     .project-card, .reel {
       background: #fff;
-      padding: 1rem;
+      padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
@@ -71,36 +98,24 @@
       border: none;
       border-radius: 12px;
     }
-    .email-form {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .email-form input {
-      flex: 1;
-      padding: 0.5rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .email-form button {
-      background: #007f5f;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-    }
     footer {
       text-align: center;
       padding: 2rem;
       background: #f1f1f1;
+    }
+    a {
+      color: #007f5f;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="hero-text">
+      <form action="https://formspree.io/f/xanobzkg" method="POST" class="email-form">
+        <input type="email" name="email" placeholder="Subscribe for updates" required>
+        <button type="submit">Join Mailing List</button>
+      </form>
       <p>PODCAST</p>
       <h1>Getting Value Out of AI Projects</h1>
       <p>by Ephraim</p>
@@ -108,13 +123,9 @@
         <span class="tag">AI, ML AND DATA ENGINEERING</span>
         <span class="tag">SOFTWARE DEVELOPMENT</span>
       </div>
-      <form action="https://formspree.io/f/xanobzkg" method="POST" class="email-form">
-        <input type="email" name="email" placeholder="Your email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
     </div>
     <div class="hero-img">
-      <img src="/mnt/data/profile.jpg" alt="Ephraim's photo">
+      <img src="profile.jpg" alt="Ephraim's photo">
     </div>
   </header>
 
