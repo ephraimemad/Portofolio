@@ -4,131 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ephraim's Coding Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
       background-color: #f9f9f9;
-      color: #1f2937;
+      color: #222;
     }
-
     header {
-      background-color: #f0f4f8;
-      padding: 4rem 1rem 2rem;
-      text-align: center;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: #ffffff;
     }
-
-    header h1 {
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h1 {
       font-size: 2.5rem;
+      color: #007f5f;
       margin-bottom: 0.5rem;
-      color: #111827;
     }
-
-    header p {
+    .hero-text p {
       font-size: 1.2rem;
-      color: #4b5563;
-    }
-
-    .section {
-      padding: 3rem 1rem;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #2563eb;
-      font-size: 1.8rem;
       margin-bottom: 1rem;
-      text-align: center;
     }
-
+    .tags {
+      margin-top: 1rem;
+    }
+    .tag {
+      background-color: #f4d35e;
+      color: #222;
+      font-weight: bold;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      display: inline-block;
+      margin-right: 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+    .hero-img img {
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 8px 8px 0px #00000022;
+    }
+    .section {
+      padding: 2rem;
+    }
     .projects-grid, .reels-grid {
       display: grid;
-      gap: 1.5rem;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
     }
-
-    .project-card {
-      background: #ffffff;
+    .project-card, .reel {
+      background: #fff;
       padding: 1rem;
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-
-    .project-card h3 {
-      margin-top: 0;
-    }
-
-    .project-card a {
-      color: #3b82f6;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .reel iframe {
+    iframe {
       width: 100%;
       height: 200px;
       border: none;
-      border-radius: 0.5rem;
+      border-radius: 12px;
     }
-
-    #newsletter {
-      background-color: #e0f2fe;
-      border-radius: 1rem;
-      text-align: center;
-      padding: 2.5rem 1rem;
-      margin: 2rem auto;
-    }
-
     .email-form {
+      display: flex;
+      gap: 1rem;
       margin-top: 1rem;
     }
-
-    .email-form input[type="email"] {
-      padding: 0.6rem;
-      width: 250px;
-      border-radius: 0.5rem;
+    .email-form input {
+      flex: 1;
+      padding: 0.5rem;
+      font-size: 1rem;
       border: 1px solid #ccc;
-      margin-right: 0.5rem;
+      border-radius: 8px;
     }
-
     .email-form button {
-      padding: 0.6rem 1rem;
-      background-color: #3b82f6;
+      background: #007f5f;
       color: white;
       border: none;
-      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
       cursor: pointer;
     }
-
     footer {
-      background-color: #1e293b;
-      color: white;
       text-align: center;
-      padding: 1rem;
-    }
-
-    footer a {
-      color: #93c5fd;
-      text-decoration: none;
+      padding: 2rem;
+      background: #f1f1f1;
     }
   </style>
 </head>
 <body>
-  <!-- 📧 Email Signup Section at Top -->
-  <section id="newsletter">
-    <h2>📧 Stay in the Loop</h2>
-    <p>Subscribe to my mailing list for fresh tutorials, projects & dev reels.</p>
-    <form action="https://formspree.io/f/yourformid" method="POST" class="email-form">
-      <input type="email" name="email" placeholder="Your email address" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
   <header>
-    <h1>Ephraim's Coding Portfolio</h1>
-    <p>AI, Mobile Apps, and Bite-Sized Dev Reels 🚀</p>
+    <div class="hero-text">
+      <p>PODCAST</p>
+      <h1>Getting Value Out of AI Projects</h1>
+      <p>by Ephraim</p>
+      <div class="tags">
+        <span class="tag">AI, ML AND DATA ENGINEERING</span>
+        <span class="tag">SOFTWARE DEVELOPMENT</span>
+      </div>
+      <form action="https://formspree.io/f/xanobzkg" method="POST" class="email-form">
+        <input type="email" name="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="hero-img">
+      <img src="/mnt/data/profile.jpg" alt="Ephraim's photo">
+    </div>
   </header>
 
   <!-- 👨‍💻 Projects Section -->
