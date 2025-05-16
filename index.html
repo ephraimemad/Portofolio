@@ -49,9 +49,10 @@
       border: 1px solid #30363d;
     }
     .hero-img img {
-      width: 240px;
-      height: auto;
-      border-radius: 12px;
+      width: 320px;         /* Increase size */
+      height: 320px;        /* Make height equal to width for a perfect circle */
+      object-fit: cover;    /* Ensures the image fills the circle */
+      border-radius: 50%;   /* Makes it round */
       box-shadow: 10px 10px 0px #00000022;
     }
     .email-form {
