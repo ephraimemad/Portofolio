@@ -1,199 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ephraim's Coding Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    .video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 ratio (9/16 = 0.5625) */
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px;   /* Optional: keep your rounding */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: keep your effect */
-}
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-}
-    body {
-      margin: 0;
-      font-family: 'Space Grotesk', sans-serif;
-      background-color: #0d1117;
-      color: #c9d1d9;
-    }
-    header {
-      padding: 3rem 2rem 2rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      background: #161b22;
-      border-bottom: 1px solid #30363d;
-    }
-    .hero-text {
-      max-width: 600px;
-    }
-    .hero-text h1 {
-      font-size: 2.75rem;
-      color: #58a6ff;
-      margin-bottom: 0.5rem;
-    }
-    .hero-text p {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-    .tags {
-      margin: 1rem 0;
-    }
-    .tag {
-      background-color: #21262d;
-      color: #58a6ff;
-      font-weight: bold;
-      padding: 0.3rem 0.8rem;
-      border-radius: 999px;
-      display: inline-block;
-      margin-right: 0.5rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.05em;
-      border: 1px solid #30363d;
-    }
-    .hero-img img {
-      width: 500px;         /* Increase size */
-      height: 500px;        /* Make height equal to width for a perfect circle */
-      object-fit: cover;    /* Ensures the image fills the circle */
-      border-radius: 50%;   /* Makes it round */
-      box-shadow: 10px 10px 0px #00000022;
-    }
-    .email-form {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    .email-form input {
-      flex: 1;
-      padding: 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      background-color: #0d1117;
-      color: #c9d1d9;
-    }
-    .email-form button {
-      background: #238636;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.2rem;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .section {
-      padding: 3rem 2rem;
-    }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #58a6ff;
-    }
-    .projects-grid, .reels-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-    .project-card, .reel {
-      background: #161b22;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border: 1px solid #30363d;
-    }
-    iframe {
-      width: 100%;
-      height: 200px;
-      border: none;
-      border-radius: 12px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #161b22;
-      color: #8b949e;
-    }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ephraim's Portfolio</title>
 </head>
 <body>
-  <header>
-    <div class="hero-text">
-      <form action="https://formspree.io/f/xanobzkg" method="POST" class="email-form">
-        <input type="email" name="email" placeholder="Subscribe for updates" required>
-        <button type="submit">Join Mailing List</button>
-      </form>
-      <h1>Getting Value Out of AI Projects</h1>
-      <p>by Ephraim</p>
-      <div class="tags">
-        <span class="tag">AI, ML AND DATA ENGINEERING</span>
-        <span class="tag">SOFTWARE DEVELOPMENT</span>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="profile.jpg" alt="Ephraim's photo">
-    </div>
-  </header>
-
-  <!-- 👨‍💻 Projects Section -->
-  <section id="projects" class="section">
-    <h2>🚀 Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>VoltIDE</h3>
-        <p>AI-powered cross-platform coding IDE with GPT support.</p>
-        <a href="https://github.com/ephraimemad/voltide" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>AutoFix Chatbot</h3>
-        <p>AI chatbot for diagnosing motorcycle/bicycle problems with GPS technician map.</p>
-        <a href="https://github.com/ephraimemad/autofix-bot" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>NFC Portfolio + Link Page</h3>
-        <p>React Native and Next.js app to scan NFC cards and view personal portfolio pages.</p>
-        <a href="https://github.com/ephraimemad/nfc-link-app" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🎞️ Coding Reels Section -->
-  <section id="reels" class="section">
-    <h2>🎞️ My Coding Videos</h2>
-    <div class="reels-grid">
-      <div class="reel">
-        <div class="video-container">
-       <iframe src="https://www.youtube.com/embed/J_wWAkXawcM" allowfullscreen></iframe>
-      </div>
-      </div>
-      <div class="reel">
-        <div class="video-container">
-       <iframe src="https://www.youtube.com/embed/J_wWAkXawcM" allowfullscreen></iframe>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Made with 💻 by Ephraim • <a href="https://github.com/ephraimemad" target="_blank">GitHub</a></p>
-  </footer>
+    <header>
+        <h1>Ephraim Emad</h1>
+        <p>Welcome to my coding portfolio!</p>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate about coding and creating innovative solutions.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Short description of the project.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: ephraim@example.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Ephraim Emad</p>
+    </footer>
 </body>
 </html>
